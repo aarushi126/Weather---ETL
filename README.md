@@ -8,29 +8,29 @@ Welcome to your Astronomer project! This project was generated using the astro d
 
 Your project includes the following files and folders:
 
-dags/
+1. dags/: 
 Contains all Airflow DAGs (Directed Acyclic Graphs) for orchestrating workflows. By default, it includes:
 
-weather_data_pipeline.py:
+2. weather_data_pipeline.py:
 A custom ETL pipeline that fetches current weather data from a public Weather API (e.g., OpenWeatherMap or similar), processes the data, and optionally stores or logs it.
 This DAG demonstrates the use of the TaskFlow API and can be extended for scheduled data ingestion or alerts.
 
-Dockerfile
+3. Dockerfile: 
 Defines the container environment using a versioned Astronomer Runtime image. Customize this to install additional system-level tools or libraries.
 
-include/
+4. include/: 
 Store any auxiliary files required by your DAGs or tasks. (Empty by default)
 
-packages.txt
+5. packages.txt: 
 List OS-level packages to be installed in your Airflow environment. (Optional)
 
-requirements.txt
+6. requirements.txt: 
 Add Python dependencies your DAGs or tasks need (e.g., requests, pandas). (Optional)
 
-plugins/
+7. plugins/: 
 Extend Airflow’s capabilities by adding custom or community plugins. (Optional)
 
-airflow_settings.yaml
+8. airflow_settings.yaml: 
 A local-only settings file to preconfigure Airflow Connections, Variables, and Pools. It'd be helpful for version-controlling Airflow configurations during development.
 
 🚀 Running Airflow Locally
